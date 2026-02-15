@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-item {
+            flex: 1;
+            min-width: 300px;
+            box-shadow: 0 4px 8px rgba(42, 128, 182, 0.7);
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .project-item iframe {
+            display: block;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>Barshika Shah</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html" class="active">Project</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <h2 style="text-align: center; margin-bottom: 30px;">My Training Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <iframe src="https://barshika869.github.io/trainingproject/" width="100%" height="600"
+                        title="Training Project">
+                    </iframe>
+                </div>
+                <div class="project-item">
+                    <iframe src="https://barshika869.github.io/project2/" width="100%" height="600"
+                        title="Training Project">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Barshika Shah | All rights reserved</p>
+            <div class="social-links">
+                <a href="https://instagram.com/barshikashah"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://facebook.com/barshikashah"><img src="communication.png" alt="Facebook"></a>
+                <a href="https://wa.me/9779786287389"><img src="whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

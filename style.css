@@ -1,0 +1,248 @@
+/* ===== Global Styling ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d2dad3;
+    box-shadow: 0 2px 5px rgba(35, 161, 199, 0.7);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #1f3c88;
+    letter-spacing: 1px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Navigation ===== */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f3c88;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #1f3c88;
+    color: white;
+    border-radius: 4px;
+}
+
+
+
+/* ===== Main Content ===== */
+main {
+    padding: 80px 20px 80px;
+    /* Top padding for header, bottom for footer */
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(45, 179, 213, 0.7);
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #1f3c88;
+    border-bottom: 2px solid #1f3c88;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Tables ===== */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #1f3c88;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1f3c88;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* ===== Forms (Kept generic styles) ===== */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+input,
+select,
+button {
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+    width: 100%;
+    /* Make inputs responsive */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1f3c88;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: auto;
+}
+
+button:hover {
+    background-color: #163172;
+}
+
+/* ===== Responsive Design ===== */
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px;
+    }
+
+    .nav-links a {
+        padding: 8px 12px;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Slight background for better touch capability */
+        border-radius: 4px;
+    }
+
+    main {
+        padding-top: 140px;
+        /* Adjust for taller header */
+        padding-bottom: 100px;
+    }
+}

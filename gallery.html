@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            border: 3px solid #555;
+            padding: 5px;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            max-height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>Barshika Shah</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <h2 style="text-align: center; margin-bottom: 30px;">Photo Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="img2.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="img3.jpg" alt="Gallery Image 2">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Barshika Shah | All rights reserved</p>
+            <div class="social-links">
+                <a href="https://instagram.com/barshikashah"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://facebook.com/barshikashah"><img src="communication.png" alt="Facebook"></a>
+                <a href="https://wa.me/9779786287389"><img src="whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>
